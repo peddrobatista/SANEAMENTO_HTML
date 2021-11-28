@@ -1,0 +1,63 @@
+@charset="UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Shadows+Into+Light');
+p {
+	position: absolute;
+	top: 500px;
+	margin-left: 230px;
+	padding: 20px;
+	font-family: 'Amatic SC', cursive;
+	border-bottom: 1px solid rgba(0,162,232,.4);
+	font-size: 27pt;
+	font-weight: bold;
+}
+ul#album-photo {
+	position: absolute;
+	top:600px;
+	overflow: hidden;
+	list-style: none;
+	padding: 50px;
+	margin-left: 120px;
+
+}
+ul#album-photo li {
+	float: left;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 5px solid white;
+    box-shadow: 2px 2px 4px rgba(127,127,127,.2);
+    background-color: rgba(0,128,255,.3);
+}
+ul#album-photo li span {
+	opacity: 1;
+	line-height: 565px;
+	margin-left: 50px;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 10pt;
+	color: rgba(0,122,244,1);
+	padding: 8px;
+}
+ul#album-photo li#photo1 {
+     background: url('../saneamentoimg/photo1.png') center no-repeat;
+     background-color: rgba(0,128,255,.2);
+}
+ul#album-photo li#photo2 {
+     background: url('../saneamentoimg/photo2.png') center no-repeat;
+     background-color: rgba(0,128,255,.3);
+}
+ul#album-photo li#photo3 {
+     background: url('../saneamentoimg/photo3.png') center no-repeat;
+     background-color: rgba(0,128,255,.3);
+}
+ul#album-photo li#photo4 {
+     background: url('../saneamentoimg/photo4.png') center no-repeat;
+     background-color: rgba(0,128,255,.3);
+}
+ul#album-photo li#photo5 {
+     background: url('../saneamentoimg/photo5.png') center no-repeat;
+     background-color: rgba(0,128,255,.3);
+}
+ul#album-photo li#photo6 {
+     background: url('../saneamentoimg/photo6.jpg') center no-repeat;
+     background-color: rgba(0,128,255,.3);
+}

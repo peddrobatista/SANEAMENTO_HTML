@@ -1,0 +1,45 @@
+@charset="UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+section#conteudo {
+	position: absolute;
+	top: 500px;
+	width: 1000px;
+	left: 150px;
+}
+section#conteudo h1 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 27pt;
+	font-weight: bolder;
+	text-align: center;
+	border-bottom: 1px solid rgba(0,162,232,.4);
+	margin-bottom: 0px;
+	padding-bottom: 25px;
+}
+section#conteudo p {
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 15pt;
+	text-align: justify;
+	text-indent: 50px;
+	margin-left: 25;
+	margin-right: 20px;
+}
+ table#table {
+ 	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 70px;
+}
+table#table caption {
+    font-family: 'Boogaloo', cursive;
+    font-size: 30pt;
+    color: rgba(37,192,84,1);
+}
+ table#table td {
+	padding: 20px;
+	text-align: center;
+	background-color: rgba(0,162,232,.2);
+	font-family: 'Boogaloo', cursive;
+}
+ table#table td {
+   color: rgba(37,192,84,1);
+}

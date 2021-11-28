@@ -1,0 +1,55 @@
+@charset="UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Fira+Sans+Condensed|Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+p#titum {
+	position: absolute;
+	top: 500px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 27pt;
+	font-weight: bold;
+	margin-left: 300px;
+	padding: 13px;
+	border-bottom: 1px solid rgba(0,162,232,.4);
+}
+form#form1 {
+	margin-top: 600px;
+	width: 500px;
+	margin-left: 420px;
+	padding: 9px;
+	border: 1px solid #ffffff;
+	border-radius: 15px;
+	box-shadow: 2px 2px 4px rgba(127,127,127,.3);
+} 
+form#form1 legend, p {
+    font-family: 'Boogaloo', cursive;
+}
+form#form1 fieldset {
+	border: none;
+}
+form#form1 legend {
+	color: rgba(0,162,232,.9);
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px rgba(127,127,127,.3);
+	font-size: 23pt;
+	padding: 4px 6px 4px 4px;
+}
+form#form1 fieldset p {
+	font-size: 17pt;
+}
+form#form1 label {
+	color: rgba(0,162,232,.6);
+}
+form#form1 label:hover {
+	color : rgba(0,162,232,.9);
+}
+form#form1 input {
+	border-radius: 3px;
+	border-bottom: 1px solid #ffffff;
+	border-top: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+}
+

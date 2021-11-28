@@ -1,0 +1,169 @@
+@charset="UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Fira+Sans+Condensed|Shadows+Into+Light');
+/*font-family: 'Shadows Into Light', cursive;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Fira Sans Condensed', sans-serif;*/ 
+body {
+	background: #ffffff;
+} 
+div#interface1 {
+	width: 500px;
+	margin: 0px auto 10px auto;
+} 
+hgroup#grupotitulo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding-right: 509px;
+	padding-left: 505px;
+	padding-top: 100px;
+	padding-bottom: 155px;
+	background: url("../saneamentoimg/fotocapa6.jpg") no-repeat 0px -330px;
+}
+hgroup#grupotitulo h1 {
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-size: 40pt;
+	padding: 0px;
+	color: #ffffff;
+}
+hgroup#grupotitulo h2 {
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-size: 20pt;
+	color: #ffffff;
+}
+nav#mn {
+	display: block;
+}
+nav#mn ul {
+	list-style: none;
+    position: absolute;
+    top: 360px;
+    left: 1px;
+    padding: 10px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+nav#mn li {
+	display: inline-block;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 27px;
+    margin-right: 39px;
+    margin-left: 37px;
+    margin-bottom: 2px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bolder;
+    font-size: 22pt;
+    opacity: 1;
+}
+nav#mn li:hover {
+	background: rgba(34,177,73,1);
+	transition: 1s;
+}
+nav#mn h1 {
+	display: none;
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+a:hover {
+	color: #dddddd;
+	transition: 1s;
+}
+ul#list li {
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 15pt;
+}
+ figure#fototrat img{
+	position: relative;
+	left: 170px;
+
+}
+figure#fottrat2 img {
+    position: relative;
+    left: 250px;
+}
+figure#fottrat3 img {
+	position: relative;
+	left: 250px;
+}
+figure#fottrat4 img {
+	position: relative;
+	left: 250px;
+}
+figure#fottrat5 img {
+	position: relative;
+	left: 250px;
+}
+figure#fottrat6 img {
+	position: relative;
+	left: 250px;
+}
+section#cpo {
+	display: block;
+	position: absolute;
+	width: 970px;
+	top: 500px;
+	left:30px;
+}
+section#cpo h2 {
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: bolder;
+	font-size: 27pt;
+	font-family: 'Amatic SC', cursive;
+	margin-bottom: 50px;
+	border-bottom: 1px solid rgba(0,162,232,.4);
+}
+section#cpo p {
+	text-align: justify;
+	text-indent: 50px;
+	margin-left: 25px;
+	margin-right: 25px;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 15pt;
+}
+aside#lat {
+	display: block;
+	position: absolute;
+	width: 300px;
+	top: 500px;
+    left: 1020px;
+    box-shadow: 0px 0px 10px rgba(0,162,232,.3);
+    background: #ffffff;
+    border-radius: 9px;
+}
+aside#lat h1 {
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bolder;
+	font-size: 23pt;
+	border-bottom: 1px solid rgba(0,162,232,.4);
+	margin-left: 25px;
+	margin-right: 25px;
+}
+aside#lat p {
+	text-align: justify;
+	text-indent: 50px;
+	margin-left: 25px;
+	margin-right: 25px;
+	font-family: 'Fira Sans Condensed', sans-serif;
+}
+footer#rdp {
+	position: absolute;
+	top: 4700px;
+	left: 30px;
+	padding-right: 515px;
+	padding-left: 515px;
+}
+footer#rdp p {
+	text-align: center;
+	margin-left: 25px;
+	margin-right: 25px;
+	font-family: 'Fira Sans Condensed', sans-serif;
+}
