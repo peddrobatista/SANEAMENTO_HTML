@@ -1,63 +1,189 @@
-@charset="UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Shadows+Into+Light');
-p {
-	position: absolute;
-	top: 500px;
-	margin-left: 230px;
-	padding: 20px;
-	font-family: 'Amatic SC', cursive;
-	border-bottom: 1px solid rgba(0,162,232,.4);
-	font-size: 27pt;
-	font-weight: bold;
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Alegreya Sans', sans-serif;
 }
-ul#album-photo {
-	position: absolute;
-	top:600px;
-	overflow: hidden;
-	list-style: none;
-	padding: 50px;
-	margin-left: 120px;
-
+.interface::after
+{
+	content: "";
+	clear: both;
+	display: table;
 }
-ul#album-photo li {
+[class*="col-"]
+{
 	float: left;
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    border: 5px solid white;
-    box-shadow: 2px 2px 4px rgba(127,127,127,.2);
-    background-color: rgba(0,128,255,.3);
+	padding: 15px;
 }
-ul#album-photo li span {
-	opacity: 1;
-	line-height: 565px;
-	margin-left: 50px;
-	font-family: 'Fira Sans Condensed', sans-serif;
-	font-size: 10pt;
-	color: rgba(0,122,244,1);
-	padding: 8px;
+/* Configurações do cabeçalho */
+.cabecalho
+{
+	text-align: center;
+	position: relative;
+	margin-top: 78px;
+	font-size: 24px;
+	padding: 10px;
 }
-ul#album-photo li#photo1 {
-     background: url('../saneamentoimg/photo1.png') center no-repeat;
-     background-color: rgba(0,128,255,.2);
+/* Configurações da seção */
+.secao h1
+{
+	text-align: center;
+	font-size: 28px;
+	margin: 15px;
 }
-ul#album-photo li#photo2 {
-     background: url('../saneamentoimg/photo2.png') center no-repeat;
-     background-color: rgba(0,128,255,.3);
+/* Configurações do rodapé*/
+.rodape
+{
+	text-align: center;
+	font-size: 18px;
+	padding: 20px;
 }
-ul#album-photo li#photo3 {
-     background: url('../saneamentoimg/photo3.png') center no-repeat;
-     background-color: rgba(0,128,255,.3);
+/* Configurações do menu*/
+#menu {
+	display: block;
 }
-ul#album-photo li#photo4 {
-     background: url('../saneamentoimg/photo4.png') center no-repeat;
-     background-color: rgba(0,128,255,.3);
+#menu input {
+	display: none;
 }
-ul#album-photo li#photo5 {
-     background: url('../saneamentoimg/photo5.png') center no-repeat;
-     background-color: rgba(0,128,255,.3);
+#menu > label {
+	display: none;
 }
-ul#album-photo li#photo6 {
-     background: url('../saneamentoimg/photo6.jpg') center no-repeat;
-     background-color: rgba(0,128,255,.3);
+#menu ul {
+	display: flex;
+	list-style: none;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	flex-direction: row;
+	width: 100%;
+	height: 13%;
+	padding: 0;
+	margin: auto;
+	overflow: hidden;
+	background: rgba(61, 176, 243, 0.5);
+	backdrop-filter: blur(5px);
+}
+#menu li {
+	display: inline-block;
+	align-items: center;
+	padding: 0;
+	margin: auto;
+	justify-content: center;
+	font-weight: bolder;
+	font-size: 22pt;
+	padding-top: 10px;
+}
+#menu label ion-icon {
+	display: none;
+}
+#menu li a {
+	text-decoration: none;
+	color: #181717e0;
+	font-family: 'Alegreya Sans', sans-serif;
+	padding: 10px 20px 10px 20px;
+	border-radius: 4px;
+}
+#menu li a:hover{
+	box-shadow: 0px 0px 3px #181717e0;
+	background: #706f6f0c;
+	transition: 0.2s;
+}
+@media only screen and (max-width: 800px) {
+	/* Configurações do menu para celulares */
+	/*-----*/
+	#menu ul {
+		flex-direction: column;
+		height: 13%;
+		transition: all 0.2s;
+		/*height: 45%;*/
+	}
+	#menu ul li {
+		display: none;
+		justify-content: center;
+		text-align: center;
+		margin-top: 5px;
+		align-items: center;
+		width: 100%;
+	}
+	#menu > label {
+		display: block;
+		position: fixed;
+		border: none;
+		background: transparent;
+		margin: 0;
+		top: 10px;
+		left: 86%;
+		padding: 0;
+		cursor: pointer;
+		z-index: 10;
+	}
+	#menu > label ion-icon {
+		display: block;
+		color: #181717e0;
+		font-size: 50px;
+		transition: all 0.2s;
+	}
+	#menu label #ion2 {
+		display: none;
+	}
+	#menu #btnClick1:checked ~ ul {
+		height: 58%;
+	}
+	#menu #btnClick1:checked ~ ul > li {
+		display: block;
+	}
+	#menu #btnClick1:checked ~ label > ion-icon#ion1 {
+		display: none;
+	}
+	#menu #btnClick1:checked ~ label > ion-icon#ion2 {
+		display: block;
+	}
+}
+/* Configurações de imagens */
+div.galeria {
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(88, 88, 88, 0.705);
+	background: #fff;
+}
+div.galeria:hover {
+	transform: scale(1.1);
+	transition: all 0.2s;
+	border: 1px solid #777;
+	font-weight: 700;
+} 
+div.galeria img {
+	border-radius: 10px;
+	width: 100%;
+	height: auto;
+}
+  
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+* {
+	box-sizing: border-box;
+} 
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 33%;
+} 
+@media only screen and (max-width: 700px) {
+	.responsive {
+	  width: 49.99999%;
+	  margin: 6px 0;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.responsive {
+	  width: 100%;
+	}
+} 
+.clearflix::after {
+	content: "";
+	display: table;
+ 	clear: both;
 }
