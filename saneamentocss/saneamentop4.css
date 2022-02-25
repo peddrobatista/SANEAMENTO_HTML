@@ -6,6 +6,10 @@
 	padding: 0;
 	font-family: 'Alegreya Sans', sans-serif;
 }
+html {
+	background: url(../saneamentoimg/paper.jpeg) no-repeat center fixed;
+	background-size: cover;
+}
 /* Configurações da interface */
 .interface::after
 {
@@ -31,6 +35,7 @@
 	margin-top: 78px;
 	font-size: 24px;
 	padding: 10px;
+	color: #fff;
 }
 /* Configurações da seção */
 .secao h1
@@ -38,6 +43,7 @@
 	text-align: center;
 	font-size: 28px;
 	margin: 15px;
+	color: #fff;
 }
 /* Configurações do rodapé*/
 .rodape
@@ -45,6 +51,7 @@
 	text-align: center;
 	font-size: 18px;
 	padding: 20px;
+	color: #fff;
 }
 /* Configurações do menu*/
 #menu {
@@ -68,7 +75,7 @@
 	padding: 0;
 	margin: auto;
 	overflow: hidden;
-	background: rgba(61, 176, 243, 0.5);
+	background: rgba(61, 176, 243, 0.185);
 	backdrop-filter: blur(5px);
 }
 #menu li {
@@ -86,10 +93,10 @@
 }
 #menu li a {
 	text-decoration: none;
-	color: #181717e0;
+	color: #fff;
 	font-family: 'Alegreya Sans', sans-serif;
 	padding: 10px 20px 10px 20px;
-	border-radius: 4px;
+	border-radius: 4px
 }
 #menu li a:hover{
 	box-shadow: 0px 0px 3px #181717e0;
@@ -127,7 +134,7 @@
 	}
 	#menu > label ion-icon {
 		display: block;
-		color: #181717e0;
+		color: #fff;
 		font-size: 50px;
 		transition: all 0.2s;
 	}
@@ -153,7 +160,7 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
-	background: #fff;
+	background: transparent;
 }
 iframe:hover {
 	transition: all 0.5s;

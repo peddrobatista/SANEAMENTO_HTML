@@ -6,6 +6,10 @@
 	padding: 0;
 	font-family: 'Alegreya Sans', sans-serif;
 }
+html {
+	background: url(../saneamentoimg/paper.jpeg) no-repeat center fixed;
+	background-size: cover;
+}
 /* Configurações da interface */
 .interface::after
 {
@@ -31,6 +35,7 @@
 	margin-top: 78px;
 	font-size: 24px;
 	padding: 10px;
+	color: #fff;
 }
 /* Configurações da seção */
 .secao h1
@@ -38,6 +43,7 @@
 	text-align: center;
 	font-size: 28px;
 	margin: 15px;
+	color: #fff;
 }
 /* Configurações do rodapé*/
 .rodape
@@ -45,6 +51,7 @@
 	text-align: center;
 	font-size: 18px;
 	padding: 20px;
+	color: #fff;
 }
 /* Configurações do menu*/
 #menu {
@@ -68,7 +75,7 @@
 	padding: 0;
 	margin: auto;
 	overflow: hidden;
-	background: rgba(61, 176, 243, 0.5);
+	background: rgba(61, 176, 243, 0.185);
 	backdrop-filter: blur(5px);
 }
 #menu li {
@@ -86,7 +93,7 @@
 }
 #menu li a {
 	text-decoration: none;
-	color: #181717e0;
+	color: #fff;
 	font-family: 'Alegreya Sans', sans-serif;
 	padding: 10px 20px 10px 20px;
 	border-radius: 4px;
@@ -127,7 +134,7 @@
 	}
 	#menu > label ion-icon {
 		display: block;
-		color: #181717e0;
+		color: #fff;
 		font-size: 50px;
 		transition: all 0.2s;
 	}
@@ -156,19 +163,17 @@
 	margin: auto;
 	padding: 15px 15px;
 	border-radius: 15px;
-	box-shadow: inset 0 0 1em rgba(34, 34, 34, 0.534);
-	background: rgba(197, 195, 195, 0.041);
+	box-shadow: inset 0 0 0.8em /*rgba(34, 34, 34, 0.534)*/ rgb(85, 226, 245);
+	/*background: rgba(197, 195, 195, 0.041);*/
+	background: rgba(81, 206, 223, 0.123);
 } 
 #form1 fieldset {
 	border: none;
 }
 #form1 legend {
-	color: rgba(0,162,232,.9);
+	color: #fff;
 	cursor: pointer;
-	border: 1px solid #ffffff;
 	border-radius: 5px;
-	background: #fff;
-	box-shadow: 1px 1px 3px rgba(127,127,127,.3);
 	font-size: 23pt;
 	font-weight: 700;
 	padding: 4px 6px 4px 4px;
@@ -177,13 +182,40 @@
 	cursor: pointer;
 	font-size: 18pt;
 	font-weight: 600;
-	color: rgba(14, 160, 223, 0.699);
+	color: #fff;
 }
 #form1 label:hover {
 	color : rgba(0,162,232,.9);
 }
+#form1 #cEsd{
+	background: transparent;
+	border-radius: 5px;
+	border: 1px solid rgba(37, 37, 37, 0.048);
+	box-shadow: inset 0 0 0.2em rgb(85, 226, 245);
+	outline: none;
+	color: #fff;
+	padding: 3px;
+	font-size: 15px;
+	overflow-y: scroll;
+}
+#form1 #cEsd::-webkit-scrollbar {
+	background: transparent;
+}
+#form1 #cEsd::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	background: rgb(134, 133, 133);
+}
+#form1 #cEsd optgroup, option{
+	color: rgba(0,162,232,.9);
+}
 #form1 input {
-	border-radius: 3px;
-	border: 1px solid #ffffff;
+	border-radius: 5px;
+	padding: 3px;
+	border: 1px solid rgba(37, 37, 37, 0.048);
+	outline: none;
+	background: transparent;
+	color: #fff;
+	font-size: 15px;
+	box-shadow: inset 0 0 0.2em rgb(85, 226, 245);
 }
 
